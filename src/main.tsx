@@ -3,8 +3,8 @@ import ReactDOM from "react-dom/client";
 import App from "./App.tsx";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import CountryCard from "./components/CountryCard.tsx";
 import Countries from "./components/Countries.tsx";
+import CountryCard from "./components/Country.tsx";
 
 const router = createBrowserRouter([
   {

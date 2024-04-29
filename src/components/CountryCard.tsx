@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { baseUrl } from "../utils/constants";
-import { Country } from "../utils/types";
+import { CountryType } from "../utils/types";
 
-export default function CountryCard() {
-  const [country, setCountry] = useState<Country[]>([]);
+export default function TypeCard() {
+  const [country, setCountry] = useState<CountryType[]>([]);
   const { countryName } = useParams();
 
   useEffect(() => {

@@ -1,13 +1,8 @@
-export interface Country {
+export interface CountryType {
   name: {
     common: string;
     official: string;
-    nativeName: {
-      ron: {
-        official: string;
-        common: string;
-      };
-    };
+    nativeName: Record<string, { official: string; common: string }>;
   };
   tld: string[];
   cca2: string;
@@ -17,12 +12,7 @@ export interface Country {
   independent: boolean;
   status: string;
   unMember: boolean;
-  currencies: {
-    MDL: {
-      name: string;
-      symbol: string;
-    };
-  };
+  currencies: Record<string, { name: string; symbol: string }>;
   idd: {
     root: string;
     suffixes: string[];
